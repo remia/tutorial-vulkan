@@ -9,10 +9,15 @@ find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
 
 add_executable(testexe main.cpp)
+target_include_directories(testexe
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+)
 target_link_libraries(testexe
-    Vulkan::Vulkan
-    glfw
-    glm::glm
+    PRIVATE
+        Vulkan::Vulkan
+        glfw
+        glm::glm
 )
 
 add_custom_target(testenv
