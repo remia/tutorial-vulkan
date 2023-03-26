@@ -11,7 +11,7 @@ find_package(glm REQUIRED)
 add_executable(testexe main.cpp)
 target_include_directories(testexe
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/includes
 )
 target_link_libraries(testexe
     PRIVATE
