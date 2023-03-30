@@ -403,7 +403,7 @@ private:
         {
             throw std::runtime_error("validation layers requested, but not available!");
         }
-        else
+        else if (enableValidationLayers)
         {
             std::cout << "validation layer(s) enabled\n";
         }
