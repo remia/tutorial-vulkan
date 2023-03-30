@@ -1,6 +1,8 @@
 Instructions
 ------------
 
+https://vulkan-tutorial.com/
+
 Download Vulkan SDK from https://www.lunarg.com/vulkan-sdk/
 
 Compile the shaders to SPIR-V:
